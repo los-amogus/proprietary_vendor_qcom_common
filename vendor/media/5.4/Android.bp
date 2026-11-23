@@ -6,6 +6,7 @@ soong_namespace {
     imports: [
         "hardware/qcom/display",
         "hardware/qcom/display/gralloc",
+        "vendor/qcom/opensource/display-commonsys-intf",
     ],
 }
 
@@ -485,7 +486,6 @@ cc_prebuilt_library_shared {
                 "libqcodec2_base",
                 "libqcodec2_platform",
                 "libhidlbase",
-                "libgrallocutils",
                 "libgralloctypes",
                 "libgralloc.qti",
                 "libdisplayconfig.qti",
@@ -510,7 +510,6 @@ cc_prebuilt_library_shared {
                 "libqcodec2_base",
                 "libqcodec2_platform",
                 "libhidlbase",
-                "libgrallocutils",
                 "libgralloctypes",
                 "libgralloc.qti",
                 "libdisplayconfig.qti",

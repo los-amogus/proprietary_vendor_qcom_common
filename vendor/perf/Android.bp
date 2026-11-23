@@ -9,6 +9,8 @@ soong_namespace {
         "vendor/qcom/common/vendor/display/5.10",
         "vendor/qcom/common/vendor/display/5.15",
         "vendor/qcom/common/vendor/display/5.4",
+        "vendor/qcom/opensource/display",
+        "vendor/qcom/opensource/display-commonsys-intf",
     ],
 }
 
@@ -30,7 +32,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcutils",
                 "libutils",
-                "vendor.qti.hardware.servicetrackeraidl-V1-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -1642,7 +1643,6 @@ cc_prebuilt_binary {
                 "libhardware",
                 "libutils",
                 "libbinder_ndk",
-                "vendor.qti.hardware.servicetrackeraidl-V1-ndk",
                 "vendor.qti.hardware.servicetrackeraidl-impl",
                 "libc++",
                 "libc",
