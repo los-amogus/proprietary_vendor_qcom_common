@@ -407,6 +407,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
+    check_elf_files: false,
     compile_multilib: "both",
     prefer: true,
     soc_specific: true,

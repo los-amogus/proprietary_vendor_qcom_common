@@ -8,6 +8,7 @@ soong_namespace {
         "vendor/qcom/common/vendor/display/5.4",
         "vendor/qcom/common/vendor/qseecomd-legacy",
         "vendor/qcom/common/vendor/qseecomd",
+        "vendor/qcom/opensource/gps/legacy",
     ],
 }
 
@@ -705,34 +706,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libminksocket",
-    owner: "qcom",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libminksocket.so",
-            ],
-            shared_libs: [
-                "libqrtr",
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }

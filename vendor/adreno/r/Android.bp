@@ -3,6 +3,10 @@
 //
 
 soong_namespace {
+    imports: [
+        "hardware/qcom/display/gralloc",
+        "vendor/qcom/opensource/display-commonsys-intf",
+    ],
 }
 
 cc_prebuilt_library_shared {
