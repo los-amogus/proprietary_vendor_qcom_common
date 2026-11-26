@@ -6,6 +6,7 @@ soong_namespace {
     imports: [
         "hardware/qcom/display",
         "vendor/qcom/common/vendor/keymaster",
+        "vendor/qcom/opensource/display-commonsys-intf",
     ],
 }
 
